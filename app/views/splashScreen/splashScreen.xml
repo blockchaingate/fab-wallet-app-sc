@@ -1,0 +1,8 @@
+<Page loaded="pageLoaded">
+<ActionBar title="FAB Wallet" class="action-bar" ></ActionBar> 
+
+<StackLayout orientation="vertical" verticalAlignment="center" horizontalAlignment="center" >
+<Image src ="~/images/logo.png" style="width:30%; top:30%"/>
+
+</StackLayout>
+</Page>

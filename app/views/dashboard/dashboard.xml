@@ -1,0 +1,64 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar"  ></ActionBar> 
+  <!-- Your UI components go here -->
+
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+
+
+
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+
+
+<!--
+<StackLayout orientation="horizontal">
+
+<Button class="bigButton btnGreen font-awesome" text="&#xf1d8; &#13;&#10; Send Fabcoins"/>
+<Button class="btn btn-outline btn-rounded-lg"  text="Test Button"/>
+</StackLayout>
+-->
+
+<Label class="h4 mh10 center" id="title" editable="false" text="Fabcoin Wallet" visibility="collapse" textWrap="true" ></Label>
+
+
+<!-- Here, add fields for confirmed vs unconfirmed balance -->
+
+<!-- English Version -->
+<!--<StackLayout orientation="horizontal">-->
+<!--<Label class="h3 mh5 left" id="currentBalanceLabel" width="60%" editable="false" text="Current Balance" textWrap="true" ></Label> -->
+<Label class="h3 mh5 center" id="currentBalanceLabel" editable="false" text="Current Balance" textWrap="true" ></Label>
+<!--<Button width="20%" horizontalAlignment="right" class="btn btn-outline btn-rounded-lg font-awesome" id="refreshBtn" style="font-size:20px;  text-align: center;"  text="&#xf021;" tap="refreshClicked" />-->
+<Button width="20%" class="btn btn-outline btn-rounded-lg font-awesome" id="refreshBtn" style="font-size:20px;  text-align: center;"  text="&#xf021;" tap="refreshClicked" />
+<!--</StackLayout>-->
+
+<Button class="btn btn-outline btn-rounded-lg" id="tokenBtn" text="Tokens"  tap="tokensClicked" /> 
+
+<GridLayout columns="auto,auto" rows="auto,auto"  width="100%"   >
+<!--<Button class="bigButton btnYellow font-awesome " textWrap="true" style="padding:5%;" id="sendBtn" row="0" col="0" text="&#xf1d8; &#13;&#10;" tap="sendClicked" />
+<Button class="bigButton btnGreen font-awesome "  textWrap="true" style="padding:5%;" id="receiveBtn" row="0" col="1"  text="&#xf019; &#13;&#10;" tap="receiveClicked" />
+<Button class="bigButton font-awesome btnOrange " textWrap="true" style="padding:5%;" id="txHistoryBtn" row="1" col="0"  text="&#xf15c; &#13;&#10;" tap="txHistoryClicked" />
+<Button class="bigButton font-awesome btnBlue "  textWrap="true"  style="padding:5%;" id="settingsBtn" row="1" col="1"  text="&#xf013; &#13;&#10;" tap="settingsClicked" />-->
+
+<Button class="bigButton btnYellow font-awesome " textWrap="true" style="padding:5%;" id="sendBtn" row="0" col="0"  tap="sendClicked" /> 
+<Button class="bigButton btnGreen font-awesome "  textWrap="true" style="padding:5%;" id="receiveBtn" row="0" col="1"   tap="receiveClicked" />
+<Button class="bigButton font-awesome btnOrange " textWrap="true" style="padding:5%;" id="txHistoryBtn" row="1" col="0"   tap="txHistoryClicked" />
+<Button class="bigButton font-awesome btnBlue "  textWrap="true"  style="padding:5%;" id="settingsBtn" row="1" col="1"   tap="settingsClicked" />
+</GridLayout>
+
+
+<Button class="btn btn-outline btn-rounded-lg" id="exitBtn"  text="Exit" tap="exitClicked" />
+
+<!-- Chinese version
+<Label class="h3 mh10 center" id="currentBalanceLabel" editable="false" text="目前的余额" textWrap="true" ></Label>
+
+<Button class="btn btn-outline btn-rounded-lg" id="sendBtn"  text="发送FabCoins" tap="sendClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="receiveBtn"  text="收到FabCoins" tap="receiveClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="txhistoryBtn"  text="交易历史" tap="txHistoryClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="settingsBtn"  text="设置" tap="settingsClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="exitBtn"  text="放弃" tap="exitClicked" />
+--> 
+
+</StackLayout>
+
+
+</Page>

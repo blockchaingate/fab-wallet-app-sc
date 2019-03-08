@@ -1,0 +1,41 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet Settings" class="action-bar" ></ActionBar> 
+  <ScrollView orientation="vertical" verticalAlignment="center">
+  <!-- Your UI components go here -->
+<GridLayout id="myGrid" rows="auto"  >
+<StackLayout id="myLayout" orientation="vertical" verticalAlignment="center"  >
+
+<!--
+<DockLayout  >
+<Label class="h4 mh5" dock="left" width="70%" editable="false" id="text1" text="Require Password for every Send Transaction" textWrap="true" ></Label> 
+<Switch  dock="right" id="reqPwd" style="margin-right:5%"  width="10%" checked="true" checkedChange="reqPwdChanged" ></Switch>
+ </DockLayout>
+-->
+
+<!-- The component below may be required later. However, it is currently not serving any purpose and hence is hidden temporarily-->
+ <DockLayout style="margin-top:20; margin-bottom:20;" visibility="collapse" >
+<Label class="h4 mh5" dock="left" width="70%" editable="false" id="text2" text="Minimum Number of Confirmations required to be qualified as Confirmed Balance (Default : 30)" textWrap="true" ></Label> 
+<TextField style="margin-right:5%;text-align:center;" dock="right" verticalAlignment="center" horizontalAlignment="center" id="numCnf" width="20%" text="30" keyboardType="number" ></TextField>
+ </DockLayout>
+
+ <!--This Button may not be required">-->
+<!--<Button class="btn btn-outline btn-rounded-lg mh20" text="Apply Changes" tap="applyClicked"/>-->
+
+<!--<Label class="h3 mh10" editable="false" text="{{txt}}" textWrap="true" ></Label>-->
+<!--<Button class="btn btn-outline btn-rounded-lg" id="btn" text="Create Password" tap="onButtonTap" />-->
+
+<Button class="btn btn-outline btn-rounded-lg" id="syncBtn" text="Synchronize" tap="synchronizeClicked"/>
+<Button class="btn btn-outline btn-rounded-lg" id="languageBtn" backgroundColor="orange" color="white" text="Change Language" tap="changeLanguageClicked"/>
+<Button class="btn btn-outline btn-rounded-lg" id="showMn" text="Show Mnemonics" tap="showMnemonicsClicked"/>
+<Button class="btn btn-outline btn-rounded-lg" id="verifyMn" text="Verify Mnemonics" tap="verifyMnemonicsClicked"/>
+<Button class="btn btn-outline btn-rounded-lg" id="resetPwd" text="Reset Password" tap="resetPasswordClicked"/>
+<Button class="btn btn-outline btn-rounded-lg" backgroundColor="red" color="white" id="delWallet" text="Delete Wallet" tap="deleteWalletClicked"/> <!--Requre password to do this -->
+<Button class="btn btn-outline btn-rounded-lg" id="setPin" text="Set PIN for login" tap="setPinClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="deletePin" text="Delete PIN" tap="deletePinClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="faq" text="FAQ" tap="faqClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="dashboard" text="Go To Dashboard" tap="goToDashboardClicked"/>
+
+</StackLayout>
+</GridLayout>
+</ScrollView>
+</Page>

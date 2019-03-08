@@ -1,0 +1,48 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="Send Fabcoins" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+<ScrollView orientation="vertical" verticalAlignment="center"  >
+<GridLayout id="myGrid" rows="auto">
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical"  >
+
+<!-- Here, add fields for confirmed vs unconfirmed balance -->
+<Label class="h3 mh5 center" id="currentBalanceLabel" editable="false" text="Current Balance" style="margin-bottom:30px;"  textWrap="true" ></Label>
+
+
+
+<StackLayout orientation="horizontal" style="margin-bottom:30px;" >
+<Label class="h5 mh5" id="deductTxFeeLabel" dock="left" width="70%" editable="false"  text="Deduct Transaction Fee From Send Amount" textWrap="true"  ></Label> 
+<Switch  id="deductFeeSwitch" checked="true" checkedChange="deductFeeSwitchChanged($event)" ></Switch>
+ </StackLayout>
+
+ <Label class="h4 mh10 center" id="spendBalanceLabel" style="color:yellow;margin-bottom:100px;" editable="false" text="Spendable Balance " textWrap="true" ></Label>
+
+
+
+
+<Label class="h4 mh10 center" editable="false" id="text1" text="Receiver's Address" visibility="collapse" textWrap="true" ></Label>
+
+
+<TextField style="margin-left:5%; " width="90%" horizontalAlignment="left"  id="rAddress" class=" myTextField"  secure="false" hint="Enter Receiver's Address..." /> 
+<StackLayout orientation="horizontal" style="margin-bottom:15px;" horizontalAlignment="center" >
+<!--<Button width="15%" horizontalAlignment="right" class="btn btn-outline btn-rounded-lg font-awesome" id="refreshBtn" style="font-size:20px;  text-align: center;"  text="&#xf0ea;" tap="pasteClicked" />
+<Button width="15%" horizontalAlignment="right" class="btn btn-outline btn-rounded-lg font-awesome" id="qrcodeBtn" style="font-size:20px;  text-align: center;"  text="&#xf029;" tap="qrClicked" />-->
+<Button   class="btn btn-outline btn-rounded-lg " width="40%" id="pasteBtn"  text="Paste Address" tap="pasteClicked" />
+<Button   class="btn btn-outline btn-rounded-lg " width="40%" id="qrcodeBtn"  text="Scan QR Code" tap="qrClicked" />
+</StackLayout>
+<!--<Button class="btn btn-outline btn-rounded-lg" style="width:50%;" id="pasteBtn" visibility="collapse" text="Paste Address" tap="pasteClicked" />-->
+
+<Label class="h1 mh10 center" editable="false" id="amountLabel" text="Amount" visibility="collapse" textWrap="true" ></Label>
+<TextField id="amount" style="margin-bottom:25px;" class="mh5" keyboardType="number" secure="false" hint="Enter Amount to be sent..." />
+
+<TextField id="comment" style="margin-bottom:100px;" class="mh5" secure="false" hint="Enter Comment (optional)" />
+
+<Button class="btn btn-outline btn-rounded-lg" id="sendBtn"  text="Send" tap="sendClicked" />
+<Button class="btn btn-outline btn-rounded-lg"   class="btn btn-outline btn-rounded-lg font-awesome" style="  text-align: center;" id="backBtn" text="Go To Dashboard" tap="backClicked"/>
+
+
+</StackLayout>
+</GridLayout>
+</ScrollView>
+</Page>

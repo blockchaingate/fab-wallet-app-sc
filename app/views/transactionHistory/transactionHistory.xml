@@ -1,0 +1,106 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="Transactions" class="action-bar"></ActionBar> 
+  <!-- Your UI components go here -->
+
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+
+<Label class="h2 mh-10" horizontalAlignment="center" id="title" text="Transaction History"/>
+<!--
+
+<StackLayout  orientation="vertical" style="height:10%; background-color:rgb(20,57,115); margin-left:5%; border-color:white; border-width:2px; border-radius:5%; margin-right:5%;margin-top:1%;" id="layout5">
+  <GridLayout columns="*,2*" rows="*,*" >
+    <Label id="type5" row="0" col="0" class="mh5" style="margin-top:10px;" text = "Send" textWrap="true"/>
+    <Label id="date5" row="0" col="1" horizontalAlignment="right" class="mh5" style="margin-top:10px;" text = "Thu 14/6/2018"/>
+    <Label id="amt5" row="1" col="0" class="mh5"  text = "10"/>
+    <Label id="time5" row="1" horizontalAlignment="right" col="1" class="mh5"  text = "3:55 PM"/>
+  </GridLayout> 
+</StackLayout>
+
+
+<StackLayout  orientation="vertical" style="height:10%; background-color:rgb(20,57,115); margin-left:5%; border-color:white; border-width:2px; border-radius:5%; margin-right:5%;margin-top:1%;" id="layout4">
+  <GridLayout columns="*,2*" rows="*,*" >
+    <Label id="type4" row="0" col="0" class="mh5" style="margin-top:10px;" text = "Send" textWrap="true"/>
+    <Label id="date4" row="0" col="1" horizontalAlignment="right" class="mh5" style="margin-top:10px;" text = "Thu 14/6/2018"/>
+    <Label id="amt4" row="1" col="0" class="mh5"  text = "10"/>
+    <Label id="time4" row="1" horizontalAlignment="right" col="1" class="mh5"  text = "3:55 PM"/>
+  </GridLayout> 
+</StackLayout>
+
+
+<StackLayout  orientation="vertical" style="height:10%; background-color:rgb(20,57,115); margin-left:5%; border-color:white; border-width:2px; border-radius:5%; margin-right:5%;margin-top:1%;" id="layout3">
+  <GridLayout columns="*,2*" rows="*,*" >
+    <Label id="type3" row="0" col="0" class="mh5" style="margin-top:10px;" text = "Send" textWrap="true"/>
+    <Label id="date3" row="0" col="1" horizontalAlignment="right" class="mh5" style="margin-top:10px;" text = "Thu 14/6/2018"/>
+    <Label id="amt3" row="1" col="0" class="mh5"  text = "10"/>
+    <Label id="time3" row="1" horizontalAlignment="right" col="1" class="mh5"  text = "3:55 PM"/>
+  </GridLayout> 
+</StackLayout>
+
+
+<StackLayout  orientation="vertical" style="height:10%; background-color:rgb(20,57,115); margin-left:5%; border-color:white; border-width:2px; border-radius:5%; margin-right:5%;margin-top:1%;" id="layout2">
+  <GridLayout columns="*,2*" rows="*,*" >
+    <Label id="type2" row="0" col="0" class="mh5" style="margin-top:10px;" text = "Send" textWrap="true"/>
+    <Label id="date2" row="0" col="1" horizontalAlignment="right" class="mh5" style="margin-top:10px;" text = "Thu 14/6/2018"/>
+    <Label id="amt2" row="1" col="0" class="mh5"  text = "10"/>
+    <Label id="time2" row="1" horizontalAlignment="right" col="1" class="mh5"  text = "3:55 PM"/>
+  </GridLayout> 
+</StackLayout>
+
+<StackLayout  orientation="vertical" style="height:10%; background-color:rgb(20,57,115); margin-left:5%; border-color:white; border-width:2px; border-radius:5%; margin-right:5%;margin-top:1%;" id="layout1">
+  <GridLayout columns="*,2*" rows="*,*" >
+    <Label id="type1" row="0" col="0" class="mh5" style="margin-top:10px;" text = "Send" textWrap="true"/>
+    <Label id="date1" row="0" col="1" horizontalAlignment="right" class="mh5" style="margin-top:10px;" text = "Thu 14/6/2018"/>
+    <Label id="amt1" row="1" col="0" class="mh5"  text = "10"/>
+    <Label id="time1" row="1" horizontalAlignment="right" col="1" class="mh5"  text = "3:55 PM"/>
+  </GridLayout> 
+</StackLayout>
+-->
+
+
+
+   <ListView items="{{myList}}" itemTap="onItemTap" id ="rere" style="margin-left:5%;margin-right:5%; background: rgb(1,24,59);" height="70%">
+  
+        <ListView.itemTemplate >
+       
+         <StackLayout  orientation="vertical">
+           <StackLayout style="height:5;background-color:rgb(1,24,59);" orientation="vertical"></StackLayout>
+
+
+        <!--<StackLayout style="background-color:rgb(20,57,115);color:white; border-radius:5;" orientation="vertical">
+        
+       <Label  style="margin-left:50px; margin-bottom:10px;margin-top:10px;" text = " {{Test0}}" textWrap="true"/>
+       <Label text = " {{Test1 }}" style="{{ (Type=='send') ? 'color:rgb(255,150,100);margin-left:50px; margin-bottom:10px;margin-top:10px;' : 'color:rgb(150,255,150);margin-left:50px; margin-bottom:10px;margin-top:10px;'}}" textWrap="true"/>
+        <Label   style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{Test2}}" textWrap="true"/>
+        <Label   style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{Test3}}" textWrap="true"/>
+        </StackLayout> -->
+        <StackLayout style="background-color:rgb(255,255,240);color:black; border-radius:5; font-weight:bold; font-size:15;" orientation="vertical">
+        
+       <Label  style="margin-left:50px; margin-bottom:10px;margin-top:10px;" text = " {{Test0}}" textWrap="true"/>
+       <Label text = " {{Test1 }}" style="{{ (Type=='send') ? 'color:rgb(200,0,0);margin-left:50px; margin-bottom:10px;margin-top:10px;' : 'color:rgb(0,180,0);margin-left:50px; margin-bottom:10px;margin-top:10px;'}}" textWrap="true"/>
+        <Label   style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{Test2}}" textWrap="true"/>
+        <Label   style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{Test3}}" textWrap="true"/>
+        </StackLayout>
+       
+
+         </StackLayout>
+        </ListView.itemTemplate>
+    
+    </ListView>
+
+
+    <StackLayout orientation="horizontal" horizontalAlignment="center">
+      <Button class="btn btn-outline btn-rounded-lg" id="prevTxs" text="<<<" tap="prevClicked"/>
+
+  <Button class="btn btn-outline btn-rounded-lg" id="nextTxs" text=">>>" tap="nextClicked"/>
+
+    </StackLayout>
+
+    <Button class="btn btn-outline btn-rounded-lg" id="goToDashboard" text="Go To Dashboard" tap="goToDashboardClicked"/>
+
+
+   <!-- <Button class="btn btn-outline btn-rounded-lg" id="exit" text="Exit" tap="exitClicked"/> -->
+
+</StackLayout>
+</Page>

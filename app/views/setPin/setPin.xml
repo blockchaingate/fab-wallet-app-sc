@@ -1,0 +1,15 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+<Label class="h1 mh10 center" editable="false" id="title" text="Create a 4 digit PIN for Login" textWrap="true" ></Label>
+
+<TextField id="pin" class="mh10" returnKeyType="next" keyboardType="number" returnPress="nextClicked" hint="Create PIN" />
+
+<Button class="btn btn-outline btn-rounded-lg" id="nextBtn"  text="Next " tap="nextClicked" />
+
+</StackLayout>
+
+</Page>

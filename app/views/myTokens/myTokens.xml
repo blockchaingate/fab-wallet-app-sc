@@ -1,0 +1,43 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+<Label class="h1 mh10 center" editable="false" id="title" text="My Tokens" textWrap="true" ></Label>
+
+
+
+   <ListView items="{{myTokens}}" itemTap="onItemTap" id ="rere" style="margin-left:5%;margin-right:5%; background: rgb(1,24,59);" height="50%">
+        <ListView.itemTemplate >
+        <StackLayout style="background-color:rgb(20,57,115);color:white;" orientation="vertical">
+        <StackLayout style="height:5;background-color:rgb(1,24,59);" orientation="vertical"></StackLayout>
+
+      <StackLayout style="background-color:rgb(255,255,240);color:black; border-radius:5; font-weight:bold; font-size:15;" orientation="vertical">
+      <!-- <Label  style="margin-left:50px;margin-bottom:10px;margin-top:10px; color:rgb(150,50,40);" text = "{{'Token Name : '+ Name}}" textWrap="true"/> 
+       <Label  style="margin-left:50px;margin-bottom:10px;margin-top:10px; color:rgb(0,150,0); " text = " {{'Symbol : '+ Symbol }}" textWrap="true"/>-->
+     <!--  <Label  style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{'Contract Address : '+ContractAddress}}" textWrap="true"/> -->
+      <!--  <Label  style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{'Balance : '+Balance}}" textWrap="true"/> -->
+        <Label  style="margin-left:50px;margin-bottom:10px;margin-top:10px; color:rgb(150,50,40);" text = "{{test0}}" textWrap="true"/> 
+       <Label  style="margin-left:50px;margin-bottom:10px;margin-top:10px; color:rgb(0,150,0); " text = " {{test1}}" textWrap="true"/>
+     <!--  <Label  style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{'Contract Address : '+ContractAddress}}" textWrap="true"/> -->
+       <Label  style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{test2}}" textWrap="true"/> 
+     
+         </StackLayout>
+         </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+
+    <Label class="h4 mh10 center" editable="false" id="noTokens" text="" textWrap="true"  />
+<Button class = "btn btn-outline btn-rounded-lg" id="addTokens" text="Add Tokens" tap="addTokensClicked"/>
+
+<Button class = "btn btn-outline btn-rounded-lg" id="addOtherTokens" text="Add Other Tokens" tap="addOtherTokensClicked"/>
+
+
+<Button class = "btn btn-outline btn-rounded-lg" id="back" text="Back" tap="backClicked"/>
+
+
+
+</StackLayout>
+
+</Page>

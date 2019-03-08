@@ -1,0 +1,19 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBarTitle" title="FAB Wallet" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+
+
+
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+<Label class="h3 mh10 center" id="title" editable="false" text="Select your preferred Language" textWrap="true" ></Label>
+<StackLayout orientation="horizontal" >
+<Button class="bigButton" id="engBtn" style="margin:5%;" text="English" tap="engBtnClicked"/>
+<Button class="bigButton" id="cnBtn"  text="中文" tap="cnBtnClicked"/>
+</StackLayout>
+<Button class="btn btn-outline btn-rounded-lg" id="nextBtn" text="Next" tap="nextClicked"/>
+
+
+</StackLayout>
+
+</Page>

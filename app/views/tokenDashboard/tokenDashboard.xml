@@ -1,0 +1,27 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+<Label class="h2 mh10 center" editable="false" id="title" text="Token Dashboard" textWrap="true" ></Label>
+
+    <Label id="name"  class="h5 mh10" textWrap="true"/>
+    <Label id="symbol" class="h5 mh10"  textWrap="true"/>
+    <Label id="balance"  class="h5 mh10"  textWrap="true"/>
+    <Label id="addressForToken"  class="h5 mh10"  textWrap="true"/>
+    <Label id="addressBalance"  class="h5 mh10"  textWrap="true"/>
+    
+   <!-- <Label id="balance"  class="h4 mh10"  textWrap="true"/> -->
+<Button width="20%" class="btn btn-outline btn-rounded-lg font-awesome" id="refreshBtn" style="font-size:20px;  text-align: center;"  text="&#xf021;" tap="refreshClicked" />
+    <Button class = "btn btn-outline btn-rounded-lg" id="sendTokens" text="send tokens" tap="sendTokenClicked"/>
+    <Button class = "btn btn-outline btn-rounded-lg" id="requestTokens" text="request tokens" tap="receiveTokenClicked"/>
+    <Button class = "btn btn-outline btn-rounded-lg" id="sellTokens" text="sell Tokens for Fabcoins" tap="sellClicked"/>
+    <Button class = "btn btn-outline btn-rounded-lg" id="buyTokens" text="Buy Tokens with Fabcoins" tap="buyClicked"/> 
+
+
+
+<Button class = "btn btn-outline btn-rounded-lg" id="back" text="Back" tap="backClicked"/>
+</StackLayout>
+
+</Page>

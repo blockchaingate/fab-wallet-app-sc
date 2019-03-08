@@ -1,0 +1,46 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar" ></ActionBar> 
+
+
+<StackLayout orientation="vertical"  >
+<Label class="h3 mh10 center" id="title" editable="false" text="Mnemonic Words" textWrap="true" ></Label>
+<!--<Label class="h4 mh10 center" editable="false" style="margin-bottom:10%" text="No Wallet Information was found. Kindly create a password to set up your wallet." textWrap="true" ></Label>-->
+
+<Label class="h5 mh10 center" editable="false" id="text1" style="margin-bottom:10%" text="Kindly save these mnemonic words and keep them in a secure place. These words can later be used to restore your wallet as and when required."  textWrap="true" ></Label>
+<Label class="h3 mh10" editable="false" textWrap="true" id="mnemonics" visibility="collapse" ></Label>
+
+<StackLayout class="mh5" orientation="horizontal">
+<Label id="m1"  width="48%"  style="color:yellow;" class="h3"   text="1st Word" />
+<Label id="m2" width="48%"  style="color:yellow;" class="h3"   text="2nd Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal">
+<Label id="m3"  width="48%"  style="color:yellow;" class="h3"   text="3rd Word" />
+<Label id="m4" width="48%"  style="color:yellow;" class="h3"   text="4th Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal">
+<Label id="m5"  width="48%"  style="color:yellow;" class="h3"   text="5th Word" />
+<Label id="m6" width="48%"  style="color:yellow;" class="h3"   text="6th Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal">
+<Label id="m7"  width="48%"  style="color:yellow;" class="h3"   text="7th Word" />
+<Label id="m8" width="48%"  style="color:yellow;" class="h3"   text="8th Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal">
+<Label id="m9"  width="48%"  style="color:yellow;" class="h3"   text="9th Word" />
+<Label id="m10" width="48%"  style="color:yellow;" class="h3"   text="10th Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal">
+<Label id="m11"  width="48%"  style="color:yellow;" class="h3"   text="11th Word" />
+<Label id="m12" width="48%"  style="color:yellow;" class="h3"   text="12th Word" />
+</StackLayout>
+
+
+<!--<Button class="btn btn-outline btn-rounded-lg" id="btn" text="Create Password" tap="onButtonTap" />-->
+
+<Button class="btn btn-outline btn-rounded-lg" id="backBtn" text="Back" tap="backClicked"/>
+
+
+</StackLayout>
+
+
+</Page>

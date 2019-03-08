@@ -1,0 +1,56 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar" ></ActionBar> 
+
+
+
+<StackLayout id="myStack"  orientation="vertical" verticalAlignment="top"  >
+
+<Label class="h3 mh10 center" id="title" editable="false" text="Enter Mnemonic" textWrap="true" ></Label>
+<!--<Label class="h4 mh10 center" editable="false" style="margin-bottom:10%" text="No Wallet Information was found. Kindly create a password to set up your wallet." textWrap="true" ></Label>-->
+
+<Label class="h6 mh10 center" editable="false" style="margin-bottom:10%" id="text1" text="Kindly Enter the Mnemonic words in order in the given fields." textWrap="true" ></Label>
+<!--<Label class="h3 mh10" editable="false" text="{{txt}}" textWrap="true" ></Label>-->
+<GridLayout id="myGrid" rows="auto auto auto auto auto auto">
+
+<!--<Button class="btn btn-outline btn-rounded-lg" id="btn" text="Create Password" tap="onButtonTap" />-->
+<!--<GridLayout id="myGrid" rows="auto">-->
+
+<!--<ScrollView id="myScroll" orientation="vertical" height="80%" scrollBarIndicatorVisible="true">-->
+
+<StackLayout class="mh5" orientation="horizontal" row="0">
+<TextField id="mw1"  width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="0" secure="false" hint="1st Word" />
+<TextField id="mw2" width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="1" secure="false" hint="2nd Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal" row="1">
+<TextField id="mw3"  width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="0" secure="false" hint="3rd Word" />
+<TextField id="mw4" width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="1" secure="false" hint="4th Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal" row="2">
+<TextField id="mw5"  width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="0" secure="false" hint="5th Word" />
+<TextField id="mw6" width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="1" secure="false" hint="6th Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal"  row="3">
+<TextField id="mw7"  width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="0" secure="false" hint="7th Word" />
+<TextField id="mw8" width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="1" secure="false" hint="8th Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal" row="4">
+<TextField id="mw9"  width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="0" secure="false" hint="9th Word" />
+<TextField id="mw10" width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="1" secure="false" hint="10th Word" />
+</StackLayout>
+<StackLayout class="mh5" orientation="horizontal" row="5">
+<TextField id="mw11"  width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="0" secure="false" hint="11th Word" />
+<TextField id="mw12" width="48%" autocapitalizationType="none" style="color:black;" height="50" class="h3" row="0" col="1" secure="false" hint="12th Word" />
+</StackLayout>
+
+</GridLayout>
+<!--<ActivityIndicator id="activity" busy="true" rowSpan="2" colSpan="2"/>-->
+
+
+<!--</ScrollView>-->
+<!--/GridLayout>-->
+
+<Button class="btn btn-outline btn-rounded-lg" id="nextBtn" text="Next" tap="nextClicked"/>
+
+</StackLayout>
+
+</Page>
