@@ -1,0 +1,31 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="Receive Fabcoins" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+
+<!-- Here, add fields for confirmed vs unconfirmed balance -->
+<!--<Label class="h3 mh5 center" id="currentBalanceLabel" editable="false" text="Current Balance : 000000000 FAB" textWrap="true" ></Label> -->
+
+
+<StackLayout orientation="horizontal" horizontalAlignment="center">
+<Button class="btn btn-outline btn-rounded-lg btn-fill" style="width:40%" id="base58Btn" text="Base 58 Format" textwrap="true" tap="base58Clicked"/>
+<Button class="btn btn-outline btn-rounded-lg" style="width:40%" id="hexBtn" text="Hex Format" textWrap="true" tap="hexClicked"/>
+</StackLayout>
+
+<Label class="h1 mh10 center" editable="false" id="text1" text="Receive Address" textWrap="true" ></Label>
+ <Image id="img" width="200" height="200" stretch="fill" horizontalAlignment="center" style="margin-bottom:25px;" />
+<Label id="myReceiveAddress" class="mh10 center"  secure="false" text="" textWrap="true" />
+<Button class="btn btn-outline btn-rounded-lg" style="width:50%;" id="copyBtn"  text="Copy Address" tap="copyClicked" />
+
+<!-- This button will be removed -->
+<!--
+<Button class="btn btn-outline btn-rounded-lg" id="receiveBtn"  text="Check Recent Transactions " tap="receiveClicked" />
+-->
+
+<Button class="btn btn-outline btn-rounded-lg" id="backBtn" text="Back" tap="backClicked"/>
+
+</StackLayout>
+
+</Page>

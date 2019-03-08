@@ -1,0 +1,35 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<GridLayout rows="auto">
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+<Label class="h1 mh10 center" editable="false" id="title" text="Send Tokens" textWrap="true" ></Label>
+
+    <Label id="name"  class="h4 mh10" textWrap="true"/>
+    <Label id="symbol" class="h4 mh10"  textWrap="true"/>
+    <Label id="balance"  class="h4 mh10"  textWrap="true"/>
+   <!-- <Label id="balance"  class="h4 mh10"  textWrap="true"/> -->
+
+
+    <TextField id="address" class="mh5" hint="Receiver's Address" />
+    <StackLayout orientation="horizontal" style="margin-bottom:15px;" horizontalAlignment="center" >
+    <Button   class="btn btn-outline btn-rounded-lg " width="40%" id="pasteBtn"  text="Paste Address" tap="pasteClicked" />
+    <Button   class="btn btn-outline btn-rounded-lg " width="40%" id="qrcodeBtn"  text="Scan QR Code" tap="qrClicked" />
+  </StackLayout>
+    <TextField id="amount" class="mh5" hint="Token Amount" keyboardType="number" />
+
+
+    <Button class = "btn btn-outline btn-rounded-lg" id="sendTokens" text="send tokens" tap="sendTokensClicked"/>
+
+
+
+<Button class = "btn btn-outline btn-rounded-lg" id="back" text="Back" tap="backClicked"/>
+</StackLayout>
+
+<ActivityIndicator busy="{{isLoading}}" style="color:blue;" width="100" height="100"/>
+
+</GridLayout>
+
+</Page>

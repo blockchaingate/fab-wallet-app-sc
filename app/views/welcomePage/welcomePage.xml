@@ -1,0 +1,12 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar" ></ActionBar> 
+
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+
+<Label class="h1 mh10 center" editable="false" id="title" text="Wallet Setup" textWrap="true" ></Label>
+<Label class="h4 mh10 center" editable="false" id="text1" style="margin-bottom:10%" text="If you choose &quot;Restore HD Wallet&quot;, you will be asked to enter the 12 Mnemonic words." textWrap="true" ></Label>
+<Button class="btn btn-outline btn-rounded-lg" id="newWalletBtn" text="New Wallet" tap="newWalletClicked"/>
+<Button class="btn btn-outline btn-rounded-lg" id="restoreWalletBtn" text="Restore HD Wallet" tap="restoreWalletClicked"/>
+
+</StackLayout>
+</Page>

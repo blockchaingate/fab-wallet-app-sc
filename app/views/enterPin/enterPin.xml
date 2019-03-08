@@ -1,0 +1,18 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar"  title="FAB Wallet" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+<Label class="h1 mh10 center" editable="false" id="title" text="Enter Your Pin" textWrap="true" ></Label>
+
+<TextField  id="pin" class="mh10"  secure="true" keyboardType="number" returnPress="loginClicked" hint="Enter Pin..." />
+
+<Button class="btn btn-outline btn-rounded-lg" id="nextBtn"  text="Login" tap="loginClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="enterPasswordBtn"  text="Enter Password" tap="enterPasswordClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="exitBtn" text="Exit" tap="exitClicked"/>
+
+</StackLayout>
+
+</Page>

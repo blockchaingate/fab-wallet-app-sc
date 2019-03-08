@@ -1,0 +1,24 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+
+
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+<Label class="h1 mh10 center" editable="false" id="title" text="Tokens" textWrap="true" ></Label>
+
+
+<Button class="btn btn-outline btn-rounded-lg" id="myTokensBtn"  text="My Tokens" tap="myTokensClicked" />
+
+<Button class="btn btn-outline btn-rounded-lg" id="addTokensFromListBtn"  text="Add Tokens From the List" tap="addTokensFromListClicked" />
+
+<Button class="btn btn-outline btn-rounded-lg" id="addOtherTokensBtn"  text="Add Other Tokens" tap="addOtherTokensClicked" />
+
+<Button class="btn btn-outline btn-rounded-lg" id="tokenHistoryBtn" text="Token History" tap="tokenHistoryClicked"/>
+
+<Button class="btn btn-outline btn-rounded-lg" id="backButton" text="Go To Dashboard" tap="goToDashboardClicked" />
+
+</StackLayout>
+
+
+</Page>

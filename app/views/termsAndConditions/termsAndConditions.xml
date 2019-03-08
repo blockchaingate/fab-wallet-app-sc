@@ -1,0 +1,17 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar"  title="FAB Wallet" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+
+<ScrollView orientation="vertical" height="80%">
+<Label class="h5 mh10 center" editable="false" id="text0" style="text-align:left;" textWrap="true" ></Label>
+</ScrollView>
+
+
+<Button class="btn btn-outline btn-rounded-lg" id="agreeButton"  text="I Agree to Terms And Conditions" tap="agreeClicked" />
+<Button class="btn btn-outline btn-rounded-lg" id="cancelButton" text="Cancel" tap="cancelClicked"/>
+
+</StackLayout>
+</Page>

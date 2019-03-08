@@ -1,0 +1,48 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="Transactions" class="action-bar"></ActionBar> 
+  <!-- Your UI components go here -->
+
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+
+<Label class="h2 mh-10" horizontalAlignment="center" id="title" text="Transaction History"/>
+
+<!--<ScrollView orientation="vertical" style="height:70%;">-->
+
+
+   <ListView items="{{myList}}" itemTap="onItemTap" id ="rere" style="margin-left:5%;margin-right:5%; background: rgb(1,24,59);" height="65%">
+  
+        <ListView.itemTemplate >
+        <StackLayout orientation="vertical">
+
+        <StackLayout style="height:5;background-color:rgb(1,24,59);" orientation="vertical"> </StackLayout>
+
+         <StackLayout style="background-color:rgb(255,255,240);color:black; border-radius:5;" orientation="vertical">
+    <!--<Label  style="margin-left:50px; margin-bottom:10px;margin-top:10px;" text = " {{'Token Name : ' +  TokenName}}" textWrap="true"/>-->
+    <Label  style="margin-left:50px; margin-bottom:10px;margin-top:10px;" text = " {{Testt}}" textWrap="true"/>
+       <Label  style="margin-left:50px; margin-bottom:10px;margin-top:10px;" text = " {{ Test0}}" textWrap="true"/>
+       <Label text = " {{Test1 }}" style="{{ (Type=='send' || Type =='sell') ? 'color:rgb(180,0,0);margin-left:50px; margin-bottom:10px;margin-top:10px;' : 'color:rgb(0,180,0);margin-left:50px; margin-bottom:10px;margin-top:10px;'}}" textWrap="true"/>
+        <Label   style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{Test2}}" textWrap="true"/>
+      <!-- <Label   style="margin-left:50px;margin-bottom:10px;margin-top:10px;" text = " {{Test3}}" textWrap="true"/>
+-->
+         </StackLayout>
+         </StackLayout>
+        </ListView.itemTemplate>
+    
+    </ListView>
+   <!-- </ScrollView> -->
+ 
+    <StackLayout orientation="horizontal" horizontalAlignment="center">
+      <Button class="btn btn-outline btn-rounded-lg" id="prevTxs" text="<<<" tap="prevClicked"/>
+
+  <Button class="btn btn-outline btn-rounded-lg" id="nextTxs" text=">>>" tap="nextClicked"/>
+
+    </StackLayout>
+
+    <Button class="btn btn-outline btn-rounded-lg" id="goToDashboard" text="Go To Dashboard" tap="goToDashboardClicked"/>
+
+    <Button class="btn btn-outline btn-rounded-lg" id="back" text="Back" tap="backClicked"/>
+
+</StackLayout>
+</Page>

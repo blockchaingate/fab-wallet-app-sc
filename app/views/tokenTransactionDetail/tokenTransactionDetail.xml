@@ -1,0 +1,38 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="Transactions" class="action-bar"></ActionBar> 
+  <!-- Your UI components go here -->
+
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+
+<StackLayout class="mh5" orientation="vertical" verticalAlignment="center" >
+    <Label class="h4 " horizontalAlignment="center" id="transactionDetailLabel" text="Token Transaction Detail"/>
+    <Label id ="type" class="h5 " text="Type : "/>
+    <Label id ="to" class="h5 " text="To : " textWrap="true"/>
+    <Label id ="amount" class="h5 " text="Amount : "/>
+    <Label id ="fee" class="h5 " text="Fee : "/>
+
+    <StackLayout orientation="horizontal">
+    <Label id ="txid" style="width:70%; margin-top:1%;margin-bottom:2%;" class="h5 "  text="Transaction Id" textWrap="true"/>
+    <Button id="copyTxId" style="padding-top:12;  height:50; font-size:20;  " class="btn btn-outline btn-rounded-lg font-awesome" text="&#xf0c5; &#13;&#10; " tap="copyTxIdClicked" />
+    </StackLayout>
+
+    <StackLayout orientation="horizontal">
+        <Label id ="confirmations" class="h5 "  text="Confirmations : "/>
+        <Label class="h5 " id = "numCnf" text="0"/>
+    </StackLayout> 
+
+    <Label id ="date" class="h5 " text="Date : "  textWrap="true"/>
+    <StackLayout orientation="horizontal">
+    <Label id ="blockhash" class="h5 " style="width:70%;" text="BlockHash : " textWrap="true"/>
+      <Button id="copyBlockHash" style="padding-top:12;  height:50; font-size:20;  " class="btn btn-outline btn-rounded-lg font-awesome" text="&#xf0c5; &#13;&#10; " tap="copyBlockHashClicked"/>
+    </StackLayout>
+</StackLayout>
+
+    <Button class="btn btn-outline btn-rounded-lg" id="goToTokenHistory" text="Go To Token History" tap="goToTxHistoryClicked"/>
+    <Button class="btn btn-outline btn-rounded-lg" id="goToDashboard" text="Go To Dashboard" tap="goToDashboardClicked"/>
+
+</StackLayout>
+
+</Page>

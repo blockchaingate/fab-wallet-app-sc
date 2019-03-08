@@ -1,0 +1,32 @@
+<Page loaded="pageLoaded">
+  <ActionBar id="actionBar" title="FAB Wallet" class="action-bar" ></ActionBar> 
+  <!-- Your UI components go here -->
+
+<!--<StackLayout orientation="vertical" verticalAlignment="center"  >-->
+<GridLayout rows="auto">
+<StackLayout orientation="vertical" verticalAlignment="center"  >
+<Label class="h1 mh10 center" editable="false" id="title" text="Buy Tokens" textWrap="true" ></Label>
+
+    <Label id="name"  class="h4 mh10" textWrap="true"/>
+    <Label id="symbol" class="h4 mh10"  textWrap="true"/>
+    <Label id="balance"  class="h4 mh10"  textWrap="true"/>
+    <Label id="tokenPrice" class="h4 mh10" textWrap="true"/>
+    <Label id="addressBalance"  class="h4 mh10"  textWrap="true"/>
+   <!-- <Label id="balance"  class="h4 mh10"  textWrap="true"/> -->
+
+    <TextField id="tokenAmount" class="mh5" hint="Number of Tokens to Buy" keyboardType="number" textChange="tokenTextchanged" />
+    <Label id="requiredFabcoins" class="h4 mh10" textWrap="true"/>
+
+    <Button class = "btn btn-outline btn-rounded-lg" id="buyTokens" text="Buy Tokens" tap="buyTokensClicked" />
+   
+
+
+
+<Button class = "btn btn-outline btn-rounded-lg" id="back" text="Back" tap="backClicked"/>
+</StackLayout>
+
+<ActivityIndicator busy="{{isLoading}}" style="color:blue;" width="100" height="100"/>
+
+</GridLayout>
+
+</Page>
